@@ -5,9 +5,16 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
+//static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
 static int borderpx = 2;
-static char shell[] = "/bin/sh";
+static int histsize = 2000;
+//static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
+//static char font[] = "Droid Sans Mono:pixelsize=12:antialias=true:autohint=true";
+//static char font[] = "-misc-fixed-bold-r-normal--13-120-75-75-c-70-iso8859-*";
+static char font[] = "Terminus:pixelsize=12";
+//static int borderpx = 0;
+static char shell[] = "/bin/bash";
+static char *utmp = NULL;
 
 /* Kerning / character bounding-box mutlipliers */
 float cwscale = 1.0;
@@ -44,7 +51,8 @@ static unsigned int blinktimeout = 800;
 static int bellvolume = 0;
 
 /* TERM value */
-static char termname[] = "st-256color";
+//static char termname[] = "st-256color";
+static char termname[] = "xterm-256color";
 
 static unsigned int tabspaces = 8;
 
